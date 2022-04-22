@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>The Candyland Cart Company</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/pagestyling.css">
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">        
+        <div class="container">
+        <a class="navbar-brand" href="/">Candyland</a>
+            <button type="button" class="navbar-inverse navbar-toggle collapsed" data-toggle="collapse" data-target="#myCollapsingList">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <ul id="myCollapsingList" class="nav navbar-inverse navbar-nav navbar-right collapse navbar-collapse">
+                <li><a href="/">Home</a></li>
+                <li><a href="/packages">Packages</a></li>
+                <li><a href="/gallery">Gallery</a></li>
+                <li><a href="/sweetlist">Sweet List</a></li>
+                <li><a href="/bookus">Book Us</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://www.facebook.com/thecandylandcartcompany" target="_blank"><img src="../../images/social/facebook.png" alt="FaceBook_Icon"></a></li>
+                        <li><a href="http://www.twitter.com" target="_blank"><img src="../../images/social/twitter.png" alt="Twitter_Icon"></a></li>
+                        <li><a href="http://www.instagram.com" target="_blank"><img src="../../images/social/instagram.png" alt="Instagram_Icon"></a></li>
+                    </ul>
+                </li>         
+            </ul>
+        </div>
+    </div>
+    <div ng-view>
+
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+<script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+<script src='../../js/app.js'></script>
+<script src='../../js/controller.js'></script>
+<script src='../../js/service.js'></script>
+</html>
